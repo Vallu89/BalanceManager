@@ -1,5 +1,5 @@
-#ifndef ADRESAT_H
-#define ADRESAT_H
+#ifndef INCOME_H
+#define INCOME_H
 
 #include <iostream>
 

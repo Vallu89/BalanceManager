@@ -11,6 +11,22 @@
 1575318259 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
 	<iostream>
 
-1575487083 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.h
+1575488368 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.h
 	<iostream>
+
+1303063612 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\markup.cpp
+	<stdio.h>
+	"Markup.h"
+	<errno.h>
+	<iconv.h>
+	<windows.h>
+	<mbstring.h>
+
+1303063612 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\markup.h
+	<stdlib.h>
+	<string.h>
+	<string>
+	<afx.h>
+
+1575488275 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.cpp
 
