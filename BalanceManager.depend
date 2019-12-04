@@ -28,5 +28,10 @@
 	<string>
 	<afx.h>
 
-1575488275 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.cpp
+1575489550 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.cpp
+	"TextFile.h"
+
+1575489550 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.h
+	<iostream>
+	<fstream>
 
