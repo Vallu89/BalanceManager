@@ -8,7 +8,7 @@ using namespace std;
 #include "IncomeManager.h"
 #include "ExpenseManager.h"
 
-class BalanceManager{
+class ExpenseManager{
 
     UserManager userManager;
     IncomeManager *incomeManager;

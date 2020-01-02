@@ -12,8 +12,9 @@ protected:
     const string FILE_NAME;
 
 public:
-    TextFile( string file_name ): FILE_NAME (file_name){};
-    bool isFileEmpty(fstream &textFile);
+
+    TextFile( string file_name ): FILE_NAME ( file_name ){};
+    bool isFileEmpty( fstream &textFile );
 
 };
 
