@@ -19,7 +19,7 @@ class UserManager {
     FileWithUsers fileWithUsers;
 
     int downloadNewUserId();
-    bool isLoginExist();
+    bool isLoginExist( string login );
     string loadLine();
 
 public:
@@ -29,7 +29,7 @@ public:
     void registrationUser();
     void writeAllUsers();
     void logoutUser();
-    vector <Uzytkownik> changePasswordOfLoggedUser();
+    vector <User> changePasswordOfLoggedUser();
     int downloadIdOfLoggedUser();
     bool isUserLogged();
     User giveNewUserdata();

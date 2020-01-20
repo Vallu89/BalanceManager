@@ -30,9 +30,9 @@ string SupportMethod::getNumber( string text, int charPosition )
 
 string SupportMethod::loadLine()
 {
-    string enter = "";
-    getline(cin, enter);
-    return enter;
+    string entry = "";
+    getline(cin, entry);
+    return entry;
 }
 
 char SupportMethod::loadChar(){

@@ -1,20 +1,20 @@
 # depslib dependency file v1.0
 1575315267 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.cpp
 
-1575317706 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.cpp
 
-1575319880 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
 	"Income.h"
 
-1575317706 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
 
-1575318260 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
 	<iostream>
 
-1575488370 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.h
+1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.h
 	<iostream>
 
-1303063612 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\markup.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\markup.cpp
 	<stdio.h>
 	"Markup.h"
 	<errno.h>
@@ -22,16 +22,16 @@
 	<windows.h>
 	<mbstring.h>
 
-1303063612 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\markup.h
+1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\markup.h
 	<stdlib.h>
 	<string.h>
 	<string>
 	<afx.h>
 
-1575489552 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.cpp
 	"TextFile.h"
 
-1575494024 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.h
+1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.h
 	<iostream>
 	<fstream>
 
@@ -93,30 +93,30 @@
 1577105512 c:\users\dell\desktop\rafa³\objectc++\balancemanager\balancemanager\user.h
 	<iostream>
 
-1577104530 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expense.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expense.cpp
 	"Expense.h"
 
-1577104570 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expense.h
+1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expense.h
 	<iostream>
 
-1576010682 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.cpp
 
-1576010792 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.cpp
 
-1576010946 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
 
-1577106004 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.cpp
+1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.cpp
 	"User.h"
 
-1577105514 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.h
+1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.h
 	<iostream>
 
 1576010886 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
 
-1577629827 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
+1578845012 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
 	"SupportMethod.h"
 
-1577629827 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.h
+1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.h
 	<iostream>
 	<iostream>
 	<sstream>
