@@ -32,7 +32,7 @@ public:
     vector <User> changePasswordOfLoggedUser();
     int downloadIdOfLoggedUser();
     bool isUserLogged();
-    User giveNewUserdata();
+    User giveNewUserData();
 };
 
 #endif

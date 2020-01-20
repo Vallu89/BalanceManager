@@ -66,7 +66,7 @@ int UserManager::logonUser(){
 
 void UserManager::registrationUser(){
 
-    User user = giveNewUserdata();
+    User user = giveNewUserData();
 
     users.push_back( user );
     fileWithUsers.writeUserIntoFile( user );
@@ -93,7 +93,7 @@ vector <User> UserManager::changePasswordOfLoggedUser()
 
     for (vector <User>::iterator itr = users.begin(); itr != users.end(); itr++)
     {
-        if (itr -> getId() == loggedUserId)
+        if (itr -> getUserId() == loggedUserId)
         {
             itr -> setPassword( newPassword );
             cout << "Haslo zostalo zmienione." << endl << endl;
@@ -104,3 +104,43 @@ vector <User> UserManager::changePasswordOfLoggedUser()
     return users;
 }
 
+void UserManager::logoutUser(){
+
+    loggedUserId = 0;
+}
+
+bool UserManager::isUserLogged(){
+
+    if (loggedUserId > 0)
+        return true;
+    else
+        return false;
+}
+
+User UserManager::giveNewUserData()
+{
+    User user;
+
+    user.setUserId(downloadNewUserId());
+
+    string login;
+    do
+    {
+        cout << "Podaj login: ";
+        cin >> login;
+        user.setLogin(login);
+
+    } while (isLoginExist( user.getLogin()) == true );
+
+    string password;
+    cout << "Podaj haslo: ";
+    cin >> password;
+    user.setPassword(password);
+
+    return user;
+}
+
+int UserManager::getIdOfLoggedUser(){
+
+    return loggedUserId;
+}
