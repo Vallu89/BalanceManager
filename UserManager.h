@@ -30,7 +30,7 @@ public:
     void writeAllUsers();
     void logoutUser();
     vector <User> changePasswordOfLoggedUser();
-    int downloadIdOfLoggedUser();
+    int getIdOfLoggedUser();
     bool isUserLogged();
     User giveNewUserData();
 };

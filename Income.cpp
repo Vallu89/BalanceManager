@@ -15,6 +15,11 @@ void Income::setDate( string date ){
     this->date = date;
 }
 
+void Income::setDateToInt( int dateToInt ){
+
+    this->dateToInt = dateToInt;
+}
+
 void Income::setItem ( string item ){
 
     this->item = item;
@@ -38,6 +43,11 @@ int Income::getUserId(){
 string Income::getDate(){
 
     return date;
+}
+
+int Income::getDateToInt(){
+
+    return dateToInt;
 }
 
 string Income::getItem(){

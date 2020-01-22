@@ -3,7 +3,7 @@
 
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.cpp
 
-1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
+1579723273 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
 	"Income.h"
 
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
@@ -11,7 +11,7 @@
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
 	<iostream>
 
-1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.h
+1579723273 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.h
 	<iostream>
 
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\markup.cpp
@@ -116,7 +116,7 @@
 1578845012 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
 	"SupportMethod.h"
 
-1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.h
+1579723273 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.h
 	<iostream>
 	<iostream>
 	<sstream>

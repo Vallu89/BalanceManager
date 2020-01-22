@@ -1,33 +1,25 @@
-#ifndef ADRESAT_H
-#define ADRESAT_H
+#ifndef EXPENSEMANAGER_H
+#define EXPENSEMANAGER_H
 
 using namespace std;
 
+#include "Expense.h"
+#include "FileWithExpense.h"
 #include "SupportMethod.h"
-#include "UserManager.h"
-#include "IncomeManager.h"
-#include "ExpenseManager.h"
 
 class ExpenseManager{
 
-    UserManager userManager;
-    IncomeManager *incomeManager;
-    ExpenseManager *expenseManager;
-
-    char choice;
+    FileWithExpense fileWithExpense;
+    vector <Expense> expenses;
+    const int LOGGED_USER_ID;
 
 public:
 
-    BalanceManager(){};
-    ~BalanceManager(){};
-
-    char chooseOptionFromMainMenu();
-    char chooseOptionFromUserMenu();
-    void addIncome();
+    ExpenseManager();
     void addExpense();
-    void showThisMonthBalance();
-    void showPreviousMonthBalance();
-    void showBalanceFromPeriod();
+    void showAllExpenseInThisMonth();
+    void showAllExpensesFromPrevousMonth();
+    void showAllExpenseFromPeriod();
 
 };
 
