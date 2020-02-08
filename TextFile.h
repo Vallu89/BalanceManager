@@ -1,7 +1,6 @@
 #ifndef TEXTFILE_H
 #define TEXTFILE_H
 
-#include <iostream>
 #include <fstream>
 
 using namespace std;
@@ -14,7 +13,6 @@ protected:
 public:
 
     TextFile( string file_name ): FILE_NAME ( file_name ){};
-    bool isFileEmpty( fstream &textFile );
 
 };
 

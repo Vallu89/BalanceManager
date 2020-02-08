@@ -28,11 +28,10 @@
 	<string>
 	<afx.h>
 
-1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.cpp
+1581161815 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.cpp
 	"TextFile.h"
 
-1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.h
-	<iostream>
+1581161815 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.h
 	<fstream>
 
 1575315268 source:c:\users\dell\desktop\rafa³\objectc++\balancemanager\balancemanager\balancemanager.cpp
@@ -103,7 +102,8 @@
 
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.cpp
 
-1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
+1580766959 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
+	"FileWithUsers.h"
 
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.cpp
 	"User.h"
@@ -111,7 +111,8 @@
 1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.h
 	<iostream>
 
-1576010886 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
+1579553092 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
+	"UserManager.h"
 
 1578845012 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
 	"SupportMethod.h"
@@ -121,4 +122,23 @@
 	<iostream>
 	<sstream>
 	<algorithm>
+
+1580934259 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.h
+	<iostream>
+	<vector>
+	<windows.h>
+	<fstream>
+	<sstream>
+	"FileWithUsers.h"
+	"User.h"
+
+1580934135 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.h
+	<iostream>
+	<vector>
+	<fstream>
+	<cstdlib>
+	"User.h"
+	"TextFile.h"
+	"SupportMethod.h"
+	"Markup.h"
 

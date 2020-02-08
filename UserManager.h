@@ -24,7 +24,11 @@ class UserManager {
 
 public:
 
-    UserManager();
+    UserManager(string USERS_FILE_NAME , int LOGGEDUSERID = 0 )
+        :fileWithUsers( USERS_FILE_NAME ), loggedUserId( LOGGEDUSERID )
+    {
+        users = fileWithUsers.loadUsersFromFile();
+    };
     int logonUser();
     void registrationUser();
     void writeAllUsers();

@@ -10,7 +10,8 @@ class FileWithIncome: public TextFile {
 
 
 public:
-    FileWithIncome(string incomeFileName):TextFile( incomeFileName ){};
+    FileWithIncome(string incomeFileName)
+        :TextFile( incomeFileName ){};
 
 
 };

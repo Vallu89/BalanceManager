@@ -18,8 +18,20 @@ class BalanceManager{
 
 public:
 
-    BalanceManager(){};
-    ~BalanceManager(){};
+    BalanceManager( string USERS_FILE_NAME )
+        : userManager(USERS_FILE_NAME)
+    {
+        incomeManager = NULL;
+        expenseManager = NULL;
+    };
+
+    ~BalanceManager()
+    {
+        delete incomeManager;
+        incomeManager = NULL;
+        delete expenseManager;
+        expenseManager = NULL;
+    };
 
     char chooseOptionFromMainMenu();
     char chooseOptionFromUserMenu();
