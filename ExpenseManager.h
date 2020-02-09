@@ -15,7 +15,8 @@ class ExpenseManager{
 
 public:
 
-    ExpenseManager();
+    ExpenseManager(string EXPENSES_FILE_NAME, int loggedUserId)
+        :fileWithExpense(EXPENSES_FILE_NAME), LOGGED_USER_ID( loggedUserId ){} ;;
     void addExpense();
     void showAllExpenseInThisMonth();
     void showAllExpensesFromPrevousMonth();

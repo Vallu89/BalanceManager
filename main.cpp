@@ -42,7 +42,8 @@ int main(){
         else
         {
         IncomeManager incomeManager ("incomes.xml",userManager.getIdOfLoggedUser());
-            if (adresatMenadzer.pobierzAdresaci().empty() == true)
+        IncomeManager expenseManager ("expenses.xml",userManager.getIdOfLoggedUser());
+            if (adresatMenadzer.pobierzAdresaci().empty() == true  )
                 idOstatniegoAdresata = adresatMenadzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
 
             switch (ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika())
