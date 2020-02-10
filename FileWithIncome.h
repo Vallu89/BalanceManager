@@ -15,7 +15,7 @@ public:
     FileWithIncome(string incomeFileName)
         :TextFile( incomeFileName ){};
 
-    void writeIncomesIntoFile();
+    void writeIncomesIntoFile( Income income );
     vector<Income> loadIncomesFromFile();
     void saveAllToFile();
 

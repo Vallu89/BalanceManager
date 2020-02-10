@@ -28,3 +28,21 @@ vector<User> FileWithUsers::loadUsersFromFile()
 
     return users;
 }
+
+void FileWithUsers::writeUserIntoFile( User user )
+{
+    xml.Load(FILE_NAME);
+    xml.FindElem("Users");
+    xml.IntoElem();
+
+    xml.AddElem("User");
+    xml.IntoElem();
+
+    xml.AddElem("UserId",user.getUserId());
+    xml.AddElem("Login",user.getLogin());
+    xml.AddElem("Password",user.getPassword());
+    xml.AddElem("Name",user.getName());
+    xml.AddElem("Name",user.getSurname());
+
+    xml.Save(FILE_NAME);
+}
