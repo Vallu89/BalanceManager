@@ -21,6 +21,7 @@ public:
     void showAllExpenseInThisMonth();
     void showAllExpensesFromPrevousMonth();
     void showAllExpenseFromPeriod();
+    vector <Expense> &getExpenses() { return expenses; };
 
 };
 

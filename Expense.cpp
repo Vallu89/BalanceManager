@@ -15,11 +15,6 @@ void Expense::setDate ( string date ){
     this->date = date;
 }
 
-void Expense::setDateToInt( int dateToInt ){
-
-    this->dateToInt = dateToInt;
-}
-
 void Expense::setItem ( string item ){
 
     this->item = item;
@@ -44,12 +39,6 @@ string Expense::getDate(){
 
     return date;
 }
-
-int Expense::getDateToInt(){
-
-    return dateToInt;
-}
-
 
 string Expense::getItem(){
 

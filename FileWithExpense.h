@@ -8,12 +8,15 @@ using namespace std;
 
 class FileWithExpense: public TextFile {
 
+    Expense getExpensesData();
 
 public:
     FileWithExpense(string expenseFileName)
         :TextFile( expenseFileName ){};
 
-
+    vector<Expense> loadExpensesOfLoggedUserFromFile();
+    void writeExpensesIntoFile( Expense expense );
+    void saveAllExpensesToFile();
 };
 
 #endif

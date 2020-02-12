@@ -12,7 +12,7 @@
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
 	<iostream>
 
-1581167545 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.h
+1581534506 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.h
 	<iostream>
 
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\markup.cpp
@@ -93,17 +93,17 @@
 1577105512 c:\users\dell\desktop\rafa³\objectc++\balancemanager\balancemanager\user.h
 	<iostream>
 
-1581167545 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expense.cpp
+1581534577 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expense.cpp
 	"Expense.h"
 
-1581167545 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expense.h
+1581533194 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expense.h
 	<iostream>
 
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.cpp
 
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.cpp
 
-1581167545 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
+1581367867 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
 	"FileWithUsers.h"
 
 1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.cpp
@@ -149,22 +149,22 @@
 	"IncomeManager.h"
 	"ExpenseManager.h"
 
-1581167545 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
+1581531532 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
 	<iostream>
 	"FileWithIncome.h"
 	"Income.h"
 	"SupportMethod.h"
 
-1581366619 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.h
+1581534506 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.h
 	"Income.h"
 	"TextFile.h"
 
-1581169961 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
+1581531532 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
 	"Expense.h"
 	"FileWithExpense.h"
 	"SupportMethod.h"
 
-1581170093 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.h
+1581534506 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.h
 	"Expense.h"
 	"TextFile.h"
 

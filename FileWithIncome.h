@@ -8,7 +8,6 @@ using namespace std;
 
 class FileWithIncome: public TextFile {
 
-    bool isFileEmpty();
     Income getIncomesData();
 
 public:
@@ -16,7 +15,7 @@ public:
         :TextFile( incomeFileName ){};
 
     void writeIncomesIntoFile( Income income );
-    vector<Income> loadIncomesFromFile();
+    vector<Income> loadIncomesOfLoggedUserFromFile();
     void saveAllToFile();
 
 };

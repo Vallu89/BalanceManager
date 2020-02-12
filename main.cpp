@@ -42,11 +42,11 @@ int main(){
         else
         {
         IncomeManager incomeManager ("incomes.xml",userManager.getIdOfLoggedUser());
-        IncomeManager expenseManager ("expenses.xml",userManager.getIdOfLoggedUser());
-            if (adresatMenadzer.pobierzAdresaci().empty() == true  )
+        ExpenseManager expenseManager ("expenses.xml",userManager.getIdOfLoggedUser());
+            if (incomeManager.getIncomes().empty() == true && expenseManager.getExpenses().empty() == true )
                 idOstatniegoAdresata = adresatMenadzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
 
-            switch (ksiazkaAdresowa.wybierzOpcjeZMenuUzytkownika())
+            switch (balanceManager.chooseOptionFromUserMenu())
             {
             case '1':
                 idOstatniegoAdresata = adresatMenadzer.dodajAdresata();

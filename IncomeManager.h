@@ -23,6 +23,8 @@ public:
     void showAllIncomesInThisMonth();
     void showAllIncmoesFromPrevousMonth();
     void showAllIncomesFromPeriod();
+    vector <Income> &getIncomes() { return incomes; };
+
 };
 
 #endif
