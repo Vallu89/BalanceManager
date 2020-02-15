@@ -49,29 +49,27 @@ int main(){
             switch (balanceManager.chooseOptionFromUserMenu())
             {
             case '1':
-                idOstatniegoAdresata = adresatMenadzer.dodajAdresata();
+                balanceManager.addIncome();
                 break;
             case '2':
-                adresatMenadzer.wyszukajAdresatowPoImieniu();
+                balanceManager.addExpense()
                 break;
             case '3':
-                adresatMenadzer.wyszukajAdresatowPoNazwisku();
+                balanceManager.showThisMonthBalance();
                 break;
             case '4':
-                adresatMenadzer.wyswietlWszystkichAdresatow();
+                balanceManager.showPreviousMonthBalance();
                 break;
             case '5':
-                adresatMenadzer.usunAdresata();
+                balanceManager.showBalanceFromPeriod();
                 break;
             case '6':
-                adresatMenadzer.edytujAdresata();
+                userManager.changePasswordOfLoggedUser();
                 break;
             case '7':
-                uzytkownikMenadzer.zmianaHaslaZalogowanegoUzytkownika();
-                break;
-            case '9':
-                uzytkownikMenadzer.ustawIdZalogowanegoUzytkownika(0);
-                adresatMenadzer.pobierzAdresaci().clear();
+                userManager.logoutUser();
+                incomeManager.getIncomes().clear();
+                expenseManager.getExpenses().clear();
                 break;
             }
         }
