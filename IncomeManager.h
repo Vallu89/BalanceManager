@@ -6,6 +6,7 @@
 #include "FileWithIncome.h"
 #include "Income.h"
 #include "SupportMethod.h"
+#include "Markup.h"
 
 using namespace std;
 
@@ -14,6 +15,7 @@ class IncomeManager {
     FileWithIncome fileWithIncome;
     vector <Income> incomes;
     const int LOGGED_USER_ID;
+    CMarkup xml;
 
 public:
 
@@ -23,6 +25,7 @@ public:
     void showAllIncomesInThisMonth();
     void showAllIncmoesFromPrevousMonth();
     void showAllIncomesFromPeriod();
+    int loadIncomesOfLoggedUserFromFile();
     vector <Income> &getIncomes() { return incomes; };
 
 };

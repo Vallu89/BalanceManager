@@ -10,8 +10,8 @@ using namespace std;
 int main(){
 
 
-    int idOstatniegoAdresata = 0;
-    int idUsunietegoAdresata = 0;
+    int lastIncomeId = 0;
+    int lastExpenseId = 0;
 
     BalanceManager balanceManager("users.xml" );
     UserManager userManager("users.xml");
@@ -44,7 +44,10 @@ int main(){
         IncomeManager incomeManager ("incomes.xml",userManager.getIdOfLoggedUser());
         ExpenseManager expenseManager ("expenses.xml",userManager.getIdOfLoggedUser());
             if (incomeManager.getIncomes().empty() == true && expenseManager.getExpenses().empty() == true )
-                idOstatniegoAdresata = adresatMenadzer.wczytajAdresatowZalogowanegoUzytkownikaZPliku();
+            {
+                lastIncomeId = incomeManager.loadIncomesOfLoggedUserFromFile();
+                lastExpenseId = expenseManager.loadExpensesOfLoggedUserFromFile();
+            }
 
             switch (balanceManager.chooseOptionFromUserMenu())
             {
@@ -52,7 +55,7 @@ int main(){
                 balanceManager.addIncome();
                 break;
             case '2':
-                balanceManager.addExpense()
+                balanceManager.addExpense();
                 break;
             case '3':
                 balanceManager.showThisMonthBalance();

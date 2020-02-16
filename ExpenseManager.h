@@ -6,6 +6,7 @@ using namespace std;
 #include "Expense.h"
 #include "FileWithExpense.h"
 #include "SupportMethod.h"
+#include "Markup.h"
 
 class ExpenseManager{
 
@@ -22,6 +23,7 @@ public:
     void showAllExpensesFromPrevousMonth();
     void showAllExpenseFromPeriod();
     vector <Expense> &getExpenses() { return expenses; };
+    int loadExpensesOfLoggedUserFromFile();
 
 };
 

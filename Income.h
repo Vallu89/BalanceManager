@@ -7,22 +7,22 @@ using namespace std;
 
 class Income{
 
-    int incomeId;
     int userId;
+    int incomeId;
     string date;
     string item;
     float amount;
 
 public:
 
-    void setIncomeId( int incomeId );
     void setUserId( int userId );
+    void setIncomeId( int incomeId );
     void setDate( string date );
     void setItem ( string item );
     void setAmount ( float amount );
 
-    int getIncomeId();
     int getUserId();
+    int getIncomeId();
     string getDate();
     string getItem();
     float getAmount();
