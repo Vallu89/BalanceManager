@@ -3,7 +3,7 @@
 int IncomeManager::loadIncomesOfLoggedUserFromFile()
 {
     Income income;
-    xml.Load(INCOMES_FILE_NAME);
+    xml.Load(fileWithIncome.getFILE_NAME());
     xml.FindElem("Incomes");
     xml.IntoElem();
     while (xml.FindElem("Income"))

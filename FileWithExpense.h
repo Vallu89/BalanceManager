@@ -16,7 +16,7 @@ public:
     FileWithExpense(string expenseFileName)
         :TextFile( expenseFileName ){};
 
-    vector <Expense> loadExpensesOfLoggedUserFromFile();
+    int loadExpensesOfLoggedUserFromFile();
     void writeExpensesIntoFile( Expense expense );
     void saveAllExpensesToFile();
 };

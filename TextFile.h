@@ -13,6 +13,7 @@ protected:
 public:
 
     TextFile( string file_name ): FILE_NAME ( file_name ){};
+    string getFILE_NAME(){return FILE_NAME; };
 
 };
 

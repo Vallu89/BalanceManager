@@ -8,7 +8,7 @@
 1581534593 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
 	"Income.h"
 
-1581874769 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
+1581968499 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
 	"IncomeManager.h"
 
 1581874777 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
@@ -39,7 +39,7 @@
 1581167545 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.cpp
 	"TextFile.h"
 
-1581167545 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.h
+1581968395 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\textfile.h
 	<fstream>
 
 1575315268 source:c:\users\dell\desktop\rafa³\objectc++\balancemanager\balancemanager\balancemanager.cpp
@@ -169,13 +169,13 @@
 	"TextFile.h"
 	"Markup.h"
 
-1581874843 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
+1581969603 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
 	"Expense.h"
 	"FileWithExpense.h"
 	"SupportMethod.h"
 	"Markup.h"
 
-1581874689 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.h
+1581969489 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.h
 	"Expense.h"
 	"TextFile.h"
 	"Markup.h"

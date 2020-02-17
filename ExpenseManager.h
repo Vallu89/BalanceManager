@@ -13,6 +13,7 @@ class ExpenseManager{
     FileWithExpense fileWithExpense;
     vector <Expense> expenses;
     const int LOGGED_USER_ID;
+    CMarkup xml;
 
 public:
 
