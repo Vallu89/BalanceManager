@@ -1,7 +1,7 @@
 #include "BalanceManager.h"
 
-char BalanceManager::chooseOptionFromMainMenu(){
-
+char BalanceManager::chooseOptionFromMainMenu()
+{
     SupportMethod supportMethod;
 
     system("cls");
@@ -17,8 +17,8 @@ char BalanceManager::chooseOptionFromMainMenu(){
     return choice;
 }
 
-char BalanceManager::chooseOptionFromUserMenu(){
-
+char BalanceManager::chooseOptionFromUserMenu()
+{
     SupportMethod supportMethod;
 
     system("cls");
@@ -37,4 +37,29 @@ char BalanceManager::chooseOptionFromUserMenu(){
     choice = supportMethod.loadChar();
 
     return choice;
+}
+
+void BalanceManager::addIncome()
+{
+    incomeManager->addIncome();
+}
+
+void BalanceManager::addExpense()
+{
+    expenseManager->addExpense();
+}
+
+void BalanceManager::showThisMonthBalance()
+{
+
+}
+
+void BalanceManager::showPreviousMonthBalance()
+{
+
+}
+
+void BalanceManager::showBalanceFromPeriod()
+{
+
 }
