@@ -29,3 +29,34 @@ int IncomeManager::loadIncomesOfLoggedUserFromFile()
 
     return income.getIncomeId();
 }
+
+int IncomeManager::addIncome()
+{
+    system("cls");
+    cout << " >>> DODAWANIE NOWEGO PRZYCHODU <<<" << endl << endl;
+    getNewIncomeData();
+
+    incomes.push_back(income);
+    fileWithIncome.writeIncomesIntoFile(income);
+
+    return ++lastIncomeId;
+}
+
+Income IncomeManager::getNewIncomeData()
+{
+    income.setIncomeId(++lastIncomeId);
+    income.setUserId(LOGGED_USER_ID);
+
+    cout << "Podaj date: ";
+    income.setDate(MetodyPomocnicze::wczytajLinie());
+
+    cout << "Podaj opis: ";
+    income.setItem(MetodyPomocnicze::wczytajLinie());
+
+    cout << "Podaj kwote: ";
+    income.setAmount(MetodyPomocnicze::wczytajLinie());
+
+
+    return income;
+}
+

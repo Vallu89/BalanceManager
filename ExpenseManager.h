@@ -10,10 +10,12 @@ using namespace std;
 
 class ExpenseManager{
 
+    Expense expense;
     FileWithExpense fileWithExpense;
     vector <Expense> expenses;
     const int LOGGED_USER_ID;
     CMarkup xml;
+    int lastExpenseId;
 
 public:
 

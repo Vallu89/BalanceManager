@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1577991096 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.cpp
+1582061733 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.cpp
 	"BalanceManager.h"
 
-1581874563 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.cpp
+1582399714 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.cpp
 	"FileWithIncome.h"
 
 1581534593 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
@@ -157,20 +157,20 @@
 	"IncomeManager.h"
 	"ExpenseManager.h"
 
-1581875473 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
+1582399875 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
 	<iostream>
 	"FileWithIncome.h"
 	"Income.h"
 	"SupportMethod.h"
 	"Markup.h"
 
-1581874730 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.h
+1582400225 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.h
 	<vector>
 	"Income.h"
 	"TextFile.h"
 	"Markup.h"
 
-1581969603 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
+1582399676 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
 	"Expense.h"
 	"FileWithExpense.h"
 	"SupportMethod.h"
