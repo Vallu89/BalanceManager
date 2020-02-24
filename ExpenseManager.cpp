@@ -29,3 +29,37 @@ int ExpenseManager::loadExpensesOfLoggedUserFromFile()
 
     return expense.getExpenseId();
 }
+
+int ExpenseManager::addExpense()
+{
+    system("cls");
+    cout << " >>> DODAWANIE NOWEGO WYDATKU <<<" << endl << endl;
+    getNewExpenseData();
+
+    expenses.push_back(expense);
+    fileWithExpense.writeExpensesIntoFile(expense);
+
+    return ++lastExpenseId;
+}
+
+Expense ExpenseManager::getNewExpenseData()
+{
+    float newAmount;
+
+    expense.setExpenseId(++lastExpenseId);
+    expense.setUserId(LOGGED_USER_ID);
+
+    cout << "Podaj date: ";
+    expense.setDate(SupportMethod::loadLine());
+
+    cout << "Podaj opis: ";
+    expense.setItem(SupportMethod::loadLine());
+
+    cout << "Podaj kwote: ";
+    cin >> newAmount;
+    expense.setAmount(newAmount);
+
+
+    return expense;
+}
+

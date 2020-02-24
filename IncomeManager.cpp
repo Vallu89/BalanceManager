@@ -44,17 +44,20 @@ int IncomeManager::addIncome()
 
 Income IncomeManager::getNewIncomeData()
 {
+    float newAmount;
+
     income.setIncomeId(++lastIncomeId);
     income.setUserId(LOGGED_USER_ID);
 
     cout << "Podaj date: ";
-    income.setDate(MetodyPomocnicze::wczytajLinie());
+    income.setDate(SupportMethod::loadLine());
 
     cout << "Podaj opis: ";
-    income.setItem(MetodyPomocnicze::wczytajLinie());
+    income.setItem(SupportMethod::loadLine());
 
     cout << "Podaj kwote: ";
-    income.setAmount(MetodyPomocnicze::wczytajLinie());
+    cin >> newAmount;
+    income.setAmount(newAmount);
 
 
     return income;

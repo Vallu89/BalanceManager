@@ -2,6 +2,7 @@
 #define INCOMEMANAGER_H
 
 #include <iostream>
+#include <string>
 
 #include "FileWithIncome.h"
 #include "Income.h"
