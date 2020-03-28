@@ -22,12 +22,15 @@ public:
     ExpenseManager(string EXPENSES_FILE_NAME, int loggedUserId)
         :fileWithExpense(EXPENSES_FILE_NAME), LOGGED_USER_ID( loggedUserId ){} ;;
     int addExpense();
-    void showAllExpenseInThisMonth();
-    void showAllExpensesFromPrevousMonth();
-    void showAllExpenseFromPeriod();
+    double showAllExpenseInThisMonth();
+    double showAllExpensesFromPrevousMonth();
+    double showAllExpenseFromPeriod();
     vector <Expense> &getExpenses() { return expenses; };
     int loadExpensesOfLoggedUserFromFile();
     Expense getNewExpenseData();
+    int getLastExpenseId(){return lastExpenseId;}
+    void setlastExpenseId(int lastExpenseId )
+                        {this->lastExpenseId = lastExpenseId;}
 
 };
 

@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main(){
+int _main(){
 
 
     int lastIncomeId = 0;
@@ -77,5 +77,20 @@ int main(){
             }
         }
     }
+    return 0;
+}
+
+int main()
+{
+
+
+    IncomeManager incomeManager ("incomes.xml",1);
+
+    if (incomeManager.getIncomes().empty() == true  )
+            incomeManager.setLastIncomeId(incomeManager.loadIncomesOfLoggedUserFromFile());
+    cout << incomeManager.getLastIncomeId()<<endl;
+    system("pause");
+    incomeManager.addIncome();
+
     return 0;
 }

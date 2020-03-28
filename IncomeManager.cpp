@@ -44,7 +44,7 @@ int IncomeManager::addIncome()
 
 Income IncomeManager::getNewIncomeData()
 {
-    float newAmount;
+    double newAmount;
 
     income.setIncomeId(++lastIncomeId);
     income.setUserId(LOGGED_USER_ID);
@@ -61,5 +61,10 @@ Income IncomeManager::getNewIncomeData()
 
 
     return income;
+}
+
+double IncomeManager::showAllIncomesInThisMonth()
+{
+
 }
 

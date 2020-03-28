@@ -3,7 +3,8 @@
 void FileWithExpense::writeExpensesIntoFile( Expense expense )
 {
     xml.Load(FILE_NAME);
-    xml.FindElem("Expenses");
+    if (!xml.FindElem("Expenses"))
+        xml.AddElem("Expenses");
     xml.IntoElem();
 
     xml.AddElem("Expense");

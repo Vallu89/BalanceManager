@@ -25,12 +25,15 @@ public:
     IncomeManager(string INCOMES_FILE_NAME, int loggedUserId)
         :fileWithIncome(INCOMES_FILE_NAME), LOGGED_USER_ID( loggedUserId ){} ;
     int addIncome();
-    void showAllIncomesInThisMonth();
-    void showAllIncmoesFromPrevousMonth();
-    void showAllIncomesFromPeriod();
+    double showAllIncomesInThisMonth();
+    double showAllIncmoesFromPrevousMonth();
+    double showAllIncomesFromPeriod();
     int loadIncomesOfLoggedUserFromFile();
     vector <Income> &getIncomes() { return incomes; };
     Income getNewIncomeData();
+    int getLastIncomeId() {return lastIncomeId;}
+    void setLastIncomeId(int lastIncomeId)
+        {this->lastIncomeId = lastIncomeId;}
 
 };
 

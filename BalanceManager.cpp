@@ -51,7 +51,10 @@ void BalanceManager::addExpense()
 
 void BalanceManager::showThisMonthBalance()
 {
+    float totalBalance = incomeManager->showAllIncomesInThisMonth()
+                        - expenseManager->showAllExpenseInThisMonth();
 
+    cout << totalBalance <<endl;
 }
 
 void BalanceManager::showPreviousMonthBalance()

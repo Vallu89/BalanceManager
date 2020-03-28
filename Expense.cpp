@@ -20,7 +20,7 @@ void Expense::setItem ( string item ){
     this->item = item;
 }
 
-void Expense::setAmount ( float amount ){
+void Expense::setAmount ( double amount ){
 
     this->amount = amount;
 }
@@ -45,7 +45,7 @@ string Expense::getItem(){
     return item;
 }
 
-float Expense::getAmount(){
+double Expense::getAmount(){
 
     return amount;
 }

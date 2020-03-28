@@ -44,7 +44,7 @@ int ExpenseManager::addExpense()
 
 Expense ExpenseManager::getNewExpenseData()
 {
-    float newAmount;
+    double newAmount;
 
     expense.setExpenseId(++lastExpenseId);
     expense.setUserId(LOGGED_USER_ID);
@@ -63,3 +63,7 @@ Expense ExpenseManager::getNewExpenseData()
     return expense;
 }
 
+double ExpenseManager::showAllExpenseInThisMonth()
+{
+
+}

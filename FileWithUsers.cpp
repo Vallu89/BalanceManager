@@ -32,7 +32,8 @@ vector<User> FileWithUsers::loadUsersFromFile()
 void FileWithUsers::writeUserIntoFile( User user )
 {
     xml.Load(FILE_NAME);
-    xml.FindElem("Users");
+    if (!xml.FindElem("Users"))
+        xml.AddElem("Users");
     xml.IntoElem();
 
     xml.AddElem("User");
@@ -41,8 +42,11 @@ void FileWithUsers::writeUserIntoFile( User user )
     xml.AddElem("UserId",user.getUserId());
     xml.AddElem("Login",user.getLogin());
     xml.AddElem("Password",user.getPassword());
-    xml.AddElem("Name",user.getName());
-    xml.AddElem("Name",user.getSurname());
 
     xml.Save(FILE_NAME);
+}
+
+void FileWithUsers::saveAllUsersToFile(vector <User> &users)
+{
+    //TO DO
 }

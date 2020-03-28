@@ -3,7 +3,8 @@
 void FileWithIncome::writeIncomesIntoFile( Income income )
 {
     xml.Load(FILE_NAME);
-    xml.FindElem("Incomes");
+    if (!xml.FindElem("Incomes"))
+        xml.AddElem("Incomes");
     xml.IntoElem();
 
     xml.AddElem("Income");
