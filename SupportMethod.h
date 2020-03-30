@@ -7,6 +7,7 @@ using namespace std;
 #include <iostream>
 #include <sstream>
 #include <algorithm>
+#include <ctime>
 
 class SupportMethod{
 

@@ -17,7 +17,7 @@ int SupportMethod::convertStringToInt( string number )
     return numberInt;
 }
 
-static string SupportMethod::convertActualDateToString()
+string SupportMethod::convertActualDateToString()
 {
     time_t rawtime;
     struct tm * timeinfo;
