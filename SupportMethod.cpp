@@ -32,6 +32,19 @@ string SupportMethod::convertActualDateToString()
     return str;
 }
 
+int SupportMethod::convertDateWithDashToInt( string date )
+{
+    int dateWithoutDashInInt;
+
+    string dateWithoutDashes;
+    for (char i : date)
+    {
+        if (i != '-')
+            dateWithoutDashes +=i;
+    }
+    return dateWithoutDashInInt = convertStringToInt(dateWithoutDashes);
+}
+
 string SupportMethod::getNumber( string text, int charPosition )
 {
     string number = "";

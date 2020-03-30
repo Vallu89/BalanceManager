@@ -16,6 +16,8 @@ public:
     static string convertIntToString( int number );
     static int convertStringToInt( string number );
     static string convertActualDateToString();
+    static int convertDateWithDashToInt( string date );
+    static int convertDateToInt();
     static string getNumber( string text, int charPosition );
     static string loadLine();
     static int checkMonth();
