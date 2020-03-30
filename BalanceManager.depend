@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1582841773 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.cpp
+1585415574 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.cpp
 	"BalanceManager.h"
 
 1585397255 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.cpp
@@ -8,10 +8,10 @@
 1585395838 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
 	"Income.h"
 
-1585395902 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
+1585409574 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
 	"IncomeManager.h"
 
-1585399171 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
+1585415574 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
 	<iostream>
 	"BalanceManager.h"
 	"UserManager.h"
@@ -121,7 +121,7 @@
 1577991096 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.h
 	<iostream>
 
-1581167545 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
+1585401284 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
 	"UserManager.h"
 
 1578845012 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
@@ -152,7 +152,7 @@
 	"SupportMethod.h"
 	"Markup.h"
 
-1581167545 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.h
+1585415574 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.h
 	"SupportMethod.h"
 	"UserManager.h"
 	"IncomeManager.h"

@@ -66,3 +66,44 @@ void BalanceManager::showBalanceFromPeriod()
 {
 
 }
+
+void BalanceManager::registrationUser()
+{
+    userManager.registrationUser();
+}
+
+void BalanceManager::logonUser()
+{
+    userManager.logonUser();
+    if( userManager.isUserLogged() )
+    {
+        incomeManager = new IncomeManager("incomes.xml",userManager.getIdOfLoggedUser());
+        expenseManager = new ExpenseManager ("expenses.xml",userManager.getIdOfLoggedUser());
+    }
+}
+
+void BalanceManager::isIncomesAndExpensesExist()
+{
+    if (incomeManager->getIncomes().empty() == true && expenseManager->getExpenses().empty() == true )
+    {
+                incomeManager->setLastIncomeId(incomeManager->loadIncomesOfLoggedUserFromFile());
+                expenseManager->setlastExpenseId(expenseManager->loadExpensesOfLoggedUserFromFile());
+    }
+}
+
+void BalanceManager::logoutUser()
+{
+    userManager.logoutUser();
+    incomeManager->getIncomes().clear();
+    expenseManager->getExpenses().clear();
+}
+
+int BalanceManager::getIdOfLoggedUser()
+{
+    return userManager.getIdOfLoggedUser();
+}
+
+void BalanceManager::changePasswordOfLoggedUser()
+{
+    userManager.changePasswordOfLoggedUser();
+}

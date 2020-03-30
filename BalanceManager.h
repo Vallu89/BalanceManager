@@ -41,6 +41,16 @@ public:
     void showPreviousMonthBalance();
     void showBalanceFromPeriod();
 
+    void registrationUser();
+    void logonUser();
+    void isIncomesAndExpensesExist();
+    void logoutUser();
+    void changePasswordOfLoggedUser();
+    int getIdOfLoggedUser();
+
+
+
+
 };
 
 #endif

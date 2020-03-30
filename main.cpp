@@ -7,28 +7,25 @@
 
 using namespace std;
 
-int _main(){
+int main(){
 
-
-    int lastIncomeId = 0;
-    int lastExpenseId = 0;
 
     BalanceManager balanceManager("users.xml" );
-    UserManager userManager("users.xml");
+    //UserManager userManager("users.xml");
 
         while (true)
     {
-        if (userManager.getIdOfLoggedUser() == 0)
+        if (balanceManager.getIdOfLoggedUser() == 0)
         {
 
             switch (balanceManager.chooseOptionFromMainMenu())
             {
             case '1':
-                userManager.registrationUser();
+                balanceManager.registrationUser();
                 break;
 
             case '2':
-                userManager.logonUser();
+                balanceManager.logonUser();
                 break;
             case '9':
                 exit(0);
@@ -41,13 +38,12 @@ int _main(){
         }
         else
         {
-        IncomeManager incomeManager ("incomes.xml",userManager.getIdOfLoggedUser());
-        ExpenseManager expenseManager ("expenses.xml",userManager.getIdOfLoggedUser());
-            if (incomeManager.getIncomes().empty() == true && expenseManager.getExpenses().empty() == true )
-            {
-                lastIncomeId = incomeManager.loadIncomesOfLoggedUserFromFile();
-                lastExpenseId = expenseManager.loadExpensesOfLoggedUserFromFile();
-            }
+
+        //IncomeManager incomeManager ("incomes.xml",userManager.getIdOfLoggedUser());
+
+        //ExpenseManager expenseManager ("expenses.xml",userManager.getIdOfLoggedUser());
+
+            balanceManager.isIncomesAndExpensesExist();
 
             switch (balanceManager.chooseOptionFromUserMenu())
             {
@@ -67,12 +63,10 @@ int _main(){
                 balanceManager.showBalanceFromPeriod();
                 break;
             case '6':
-                userManager.changePasswordOfLoggedUser();
+                balanceManager.changePasswordOfLoggedUser();
                 break;
             case '7':
-                userManager.logoutUser();
-                incomeManager.getIncomes().clear();
-                expenseManager.getExpenses().clear();
+                balanceManager.logoutUser();
                 break;
             }
         }
@@ -80,7 +74,7 @@ int _main(){
     return 0;
 }
 
-int main()
+int _main()
 {
 
 
@@ -88,7 +82,7 @@ int main()
 
     if (incomeManager.getIncomes().empty() == true  )
             incomeManager.setLastIncomeId(incomeManager.loadIncomesOfLoggedUserFromFile());
-    cout << incomeManager.getLastIncomeId()<<endl;
+    //cout << incomeManager.getLastIncomeId()<<endl;
     system("pause");
     incomeManager.addIncome();
 

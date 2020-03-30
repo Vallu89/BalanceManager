@@ -17,6 +17,21 @@ int SupportMethod::convertStringToInt( string number )
     return numberInt;
 }
 
+static string SupportMethod::convertActualDateToString()
+{
+    time_t rawtime;
+    struct tm * timeinfo;
+    char buffer[80];
+
+    time (&rawtime);
+    timeinfo = localtime(&rawtime);
+
+    strftime(buffer,sizeof(buffer),"%Y-%m-%d",timeinfo);
+    string str(buffer);
+
+    return str;
+}
+
 string SupportMethod::getNumber( string text, int charPosition )
 {
     string number = "";

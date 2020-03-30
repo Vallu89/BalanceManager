@@ -49,7 +49,6 @@ int UserManager::logonUser(){
                     cout << endl << "Zalogowales sie." << endl << endl;
                     system("pause");
                     loggedUserId = itr -> getUserId();
-                    cout<< loggedUserId;
                     return loggedUserId;
                 }
             }
