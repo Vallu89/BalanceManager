@@ -1,5 +1,7 @@
 #include "Income.h"
 
+//--------Setters------------------------------
+
 void Income::setIncomeId( int incomeId ){
 
     this->incomeId = incomeId;
@@ -25,6 +27,13 @@ void Income::setAmount ( double amount ){
     this->amount = amount;
 }
 
+void Income::setDateAsInt( int dateAsInt )
+{
+    this->dateAsInt = dateAsInt;
+}
+
+//--------Getters------------------------------
+
 int Income::getIncomeId(){
 
     return incomeId;
@@ -48,4 +57,9 @@ string Income::getItem(){
 double Income::getAmount(){
 
     return amount;
+}
+
+int Income::getDateAsInt()
+{
+    return dateAsInt;
 }

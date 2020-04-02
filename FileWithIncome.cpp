@@ -13,6 +13,7 @@ void FileWithIncome::writeIncomesIntoFile( Income income )
     xml.AddElem("UserId",income.getUserId());
     xml.AddElem("IncomeId",income.getIncomeId());
     xml.AddElem("Date",income.getDate());
+    xml.AddElem("DateAsInt",income.getDateAsInt());
     xml.AddElem("Item",income.getItem());
     xml.AddElem("Amount",income.getAmount());
 

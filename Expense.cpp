@@ -1,5 +1,7 @@
 #include "Expense.h"
 
+//--------Setters------------------------------
+
 void Expense::setExpenseId ( int expenseId ){
 
     this->expenseId = expenseId;
@@ -25,6 +27,13 @@ void Expense::setAmount ( double amount ){
     this->amount = amount;
 }
 
+void Expense::setDateAsInt( int dateAsInt )
+{
+    this->dateAsInt = dateAsInt;
+}
+
+//--------Getters------------------------------
+
 int Expense::getExpenseId(){
 
     return expenseId;
@@ -48,4 +57,9 @@ string Expense::getItem(){
 double Expense::getAmount(){
 
     return amount;
+}
+
+int Expense::getDateAsInt()
+{
+    return dateAsInt;
 }

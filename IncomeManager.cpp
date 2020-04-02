@@ -52,6 +52,8 @@ Income IncomeManager::getNewIncomeData()
     cout << "Podaj date: ";
     income.setDate(SupportMethod::loadLine());
 
+    income.setDateAsInt( SupportMethod::convertDateWithDashToInt( income.getDate() ) );
+
     cout << "Podaj opis: ";
     income.setItem(SupportMethod::loadLine());
 

@@ -13,6 +13,7 @@ void FileWithExpense::writeExpensesIntoFile( Expense expense )
     xml.AddElem("UserId",expense.getUserId());
     xml.AddElem("ExpenseId",expense.getExpenseId());
     xml.AddElem("Date",expense.getDate());
+    xml.AddElem("DateAsInt",expense.getDateAsInt());
     xml.AddElem("Item",expense.getItem());
     xml.AddElem("Amount",expense.getAmount());
 

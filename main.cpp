@@ -11,14 +11,13 @@ int main(){
 
 
     BalanceManager balanceManager("users.xml" );
-    //UserManager userManager("users.xml");
 
         while (true)
     {
         if (balanceManager.getIdOfLoggedUser() == 0)
         {
 
-            switch (balanceManager.chooseOptionFromMainMenu())
+            switch ( balanceManager.chooseOptionFromMainMenu() )
             {
             case '1':
                 balanceManager.registrationUser();
@@ -38,10 +37,6 @@ int main(){
         }
         else
         {
-
-        //IncomeManager incomeManager ("incomes.xml",userManager.getIdOfLoggedUser());
-
-        //ExpenseManager expenseManager ("expenses.xml",userManager.getIdOfLoggedUser());
 
             balanceManager.isIncomesAndExpensesExist();
 

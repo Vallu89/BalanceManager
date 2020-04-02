@@ -81,3 +81,42 @@ char SupportMethod::loadChar(){
     }
     return sign;
 }
+
+bool SupportMethod::isLeapYear( string date )
+{
+    int year = convertDateWithDashToInt( date ) / 10000;
+
+    if ( ( year % 4 == 0 && year % 100 != 0 ) || year % 400 == 0 )
+        return true;
+    else
+        return false;
+}
+
+short SupportMethod::howManyDaysHaveMonth (string date)
+{
+    string month;
+    short monthAsInt;
+
+    for (int i = 4; i <= 5 ; i++ )
+        month += date[i];
+    monthAsInt = convertStringToInt( month );
+
+    switch( monthAsInt )
+    {
+        case 1 :
+        case 3 :
+        case 5 :
+        case 7 :
+        case 8 :
+        case 10 :
+        case 12 :
+            return 31;
+        case 2 :
+            if ( isLeapYear( date ) )
+                return 29;
+            else
+                return 28;
+        default :
+            return 30;
+    }
+}

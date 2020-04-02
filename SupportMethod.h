@@ -17,13 +17,13 @@ public:
     static int convertStringToInt( string number );
     static string convertActualDateToString();
     static int convertDateWithDashToInt( string date );
-    static int convertDateToInt();
     static string getNumber( string text, int charPosition );
     static string loadLine();
-    static int checkMonth();
-    static int isLeapYear();
+    static short howManyDaysHaveMonth( string date );
+    static bool isLeapYear( string date );
     static int periodBetweenDates();
     static char loadChar();
+    //static bool isProperDate(); <-- TO DO
 };
 
 #endif

@@ -52,6 +52,8 @@ Expense ExpenseManager::getNewExpenseData()
     cout << "Podaj date: ";
     expense.setDate(SupportMethod::loadLine());
 
+    expense.setDateAsInt( SupportMethod::convertDateWithDashToInt( expense.getDate() ) );
+
     cout << "Podaj opis: ";
     expense.setItem(SupportMethod::loadLine());
 

@@ -30,7 +30,7 @@ public:
     Expense getNewExpenseData();
     int getLastExpenseId(){return lastExpenseId;}
     void setlastExpenseId(int lastExpenseId )
-                        {this->lastExpenseId = lastExpenseId;}
+        {this->lastExpenseId = lastExpenseId;}
 
 };
 
