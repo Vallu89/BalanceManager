@@ -8,6 +8,8 @@ using namespace std;
 #include <sstream>
 #include <algorithm>
 #include <ctime>
+#include <cstdlib>
+#include <stdlib.h>
 
 class SupportMethod{
 
@@ -23,7 +25,8 @@ public:
     static bool isLeapYear( string date );
     static int periodBetweenDates();
     static char loadChar();
-    //static bool isProperDate(); <-- TO DO
+    static bool isProperDate(  string date, int dateAsInt  );
+    static double changeComaToDot( string number );
 };
 
 #endif

@@ -44,23 +44,26 @@ int IncomeManager::addIncome()
 
 Income IncomeManager::getNewIncomeData()
 {
-    double newAmount;
+    string AmountAsString;
 
     income.setIncomeId(++lastIncomeId);
     income.setUserId(LOGGED_USER_ID);
 
-    cout << "Podaj date: ";
-    income.setDate(SupportMethod::loadLine());
-
-    income.setDateAsInt( SupportMethod::convertDateWithDashToInt( income.getDate() ) );
-
+    while(1)
+    {
+        cout << "Podaj date( format YYYY-MM-DD ): ";
+        income.setDate(SupportMethod::loadLine());
+        income.setDateAsInt( SupportMethod::convertDateWithDashToInt( income.getDate() ) );
+        if(SupportMethod::isProperDate( income.getDate(),income.getDateAsInt() ))
+            break;
+    }
     cout << "Podaj opis: ";
     income.setItem(SupportMethod::loadLine());
 
     cout << "Podaj kwote: ";
-    cin >> newAmount;
-    income.setAmount(newAmount);
+    cin>>AmountAsString;
 
+    income.setAmount( SupportMethod::changeComaToDot( AmountAsString ) );
 
     return income;
 }

@@ -83,3 +83,12 @@ int _main()
 
     return 0;
 }
+
+int __main()
+{
+
+
+    cout <<SupportMethod::howManyDaysHaveMonth("2020-06-27")<<endl;
+
+    return 0;
+}

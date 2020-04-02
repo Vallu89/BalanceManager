@@ -21,7 +21,7 @@ string SupportMethod::convertActualDateToString()
 {
     time_t rawtime;
     struct tm * timeinfo;
-    char buffer[80];
+    char buffer[10]; // <-- Jakby coœ nie hula³o, warto siê tym zainteresowaæ :P
 
     time (&rawtime);
     timeinfo = localtime(&rawtime);
@@ -97,7 +97,7 @@ short SupportMethod::howManyDaysHaveMonth (string date)
     string month;
     short monthAsInt;
 
-    for (int i = 4; i <= 5 ; i++ )
+    for (int i = 5; i <= 6 ; i++ )
         month += date[i];
     monthAsInt = convertStringToInt( month );
 
@@ -119,4 +119,54 @@ short SupportMethod::howManyDaysHaveMonth (string date)
         default :
             return 30;
     }
+}
+
+bool SupportMethod::isProperDate( string date, int dateAsInt ) {
+
+
+    if( date.length() == 10 ) {
+        if ( dateAsInt >= 20000101 || dateAsInt <= convertDateWithDashToInt( convertActualDateToString() ))
+        {
+            if ( date[4] == '-' && date[7] == '-' )
+            {
+                if ( date[5] <= '1' && date[8] <= '3')
+                    return true;
+
+                else
+                {
+                    cout<<"Nie istnieje taki miesiac lub dzien. Wprowadz poprawna date"<<endl;
+                    return false;
+                }
+            }
+            else
+            {
+                cout<<"Nieprawidlowy format. Wprowadz date w formacie YYYY-MM-DD"<<endl;
+                return false;
+            }
+        }
+        else {
+            cout<<"Niepoprawny przedzial czasowy. Wprowadz poprawna date"<<endl;
+            return false;
+        }
+    }
+    else
+    {
+        cout<<"Niepoprawna dlugosc daty. Wprowadz poprawna date"<<endl;
+        return false;
+    }
+
+}
+
+double SupportMethod::changeComaToDot( string number )
+{
+    string newNumber;
+
+    for( auto i : number)
+    {
+        if( i ==',')
+            newNumber +=".";
+        else
+            newNumber += i;
+    }
+    return atof( newNumber.c_str() );
 }
