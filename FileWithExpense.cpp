@@ -15,7 +15,7 @@ void FileWithExpense::writeExpensesIntoFile( Expense expense )
     xml.AddElem("Date",expense.getDate());
     xml.AddElem("DateAsInt",expense.getDateAsInt());
     xml.AddElem("Item",expense.getItem());
-    xml.AddElem("Amount",expense.getAmount());
+    xml.AddElem("Amount",to_string(expense.getAmount()));
 
     xml.Save(FILE_NAME);
 }

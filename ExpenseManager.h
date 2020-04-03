@@ -20,7 +20,10 @@ class ExpenseManager{
 public:
 
     ExpenseManager(string EXPENSES_FILE_NAME, int loggedUserId)
-        :fileWithExpense(EXPENSES_FILE_NAME), LOGGED_USER_ID( loggedUserId ){} ;;
+        :fileWithExpense(EXPENSES_FILE_NAME), LOGGED_USER_ID( loggedUserId )
+    {
+        lastExpenseId = 0;
+    };
     int addExpense();
     double showAllExpenseInThisMonth();
     double showAllExpensesFromPrevousMonth();

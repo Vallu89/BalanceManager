@@ -24,7 +24,10 @@ class IncomeManager {
 public:
 
     IncomeManager(string INCOMES_FILE_NAME, int loggedUserId)
-        :fileWithIncome(INCOMES_FILE_NAME), LOGGED_USER_ID( loggedUserId ){} ;
+        :fileWithIncome(INCOMES_FILE_NAME), LOGGED_USER_ID( loggedUserId )
+    {
+        lastIncomeId = 0;
+    } ;
     int addIncome();
     double showAllIncomesInThisMonth();
     double showAllIncmoesFromPrevousMonth();

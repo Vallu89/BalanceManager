@@ -134,24 +134,24 @@ bool SupportMethod::isProperDate( string date, int dateAsInt ) {
 
                 else
                 {
-                    cout<<"Nie istnieje taki miesiac lub dzien. Wprowadz poprawna date"<<endl;
+                    cout<<"Nie istnieje taki miesiac lub dzien. Wprowadz poprawna wartosc miesiaca lub dnia."<<endl;
                     return false;
                 }
             }
             else
             {
-                cout<<"Nieprawidlowy format. Wprowadz date w formacie YYYY-MM-DD"<<endl;
+                cout<<"Nieprawidlowy format. Wprowadz date w formacie YYYY-MM-DD."<<endl;
                 return false;
             }
         }
         else {
-            cout<<"Niepoprawny przedzial czasowy. Wprowadz poprawna date"<<endl;
+            cout<<"Niepoprawny przedzial czasowy. Wprowadz poprawna date ( od 2000-01-01 do dzisiejszej daty ). "<<endl;
             return false;
         }
     }
     else
     {
-        cout<<"Niepoprawna dlugosc daty. Wprowadz poprawna date"<<endl;
+        cout<<"Niepoprawna dlugosc daty. Wprowadz poprawna date."<<endl;
         return false;
     }
 
@@ -160,6 +160,7 @@ bool SupportMethod::isProperDate( string date, int dateAsInt ) {
 double SupportMethod::changeComaToDot( string number )
 {
     string newNumber;
+    double numberAsDouble;
 
     for( auto i : number)
     {
@@ -168,5 +169,6 @@ double SupportMethod::changeComaToDot( string number )
         else
             newNumber += i;
     }
-    return atof( newNumber.c_str() );
+    numberAsDouble = atof( newNumber.c_str() );
+    return numberAsDouble;
 }

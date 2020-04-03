@@ -39,28 +39,31 @@ int ExpenseManager::addExpense()
     expenses.push_back(expense);
     fileWithExpense.writeExpensesIntoFile(expense);
 
-    return ++lastExpenseId;
+    return lastExpenseId;
 }
 
 Expense ExpenseManager::getNewExpenseData()
 {
-    double newAmount;
+string AmountAsString;
 
     expense.setExpenseId(++lastExpenseId);
     expense.setUserId(LOGGED_USER_ID);
 
-    cout << "Podaj date: ";
-    expense.setDate(SupportMethod::loadLine());
-
-    expense.setDateAsInt( SupportMethod::convertDateWithDashToInt( expense.getDate() ) );
-
+    while(1)
+    {
+        cout << "Podaj date( format YYYY-MM-DD ): ";
+        expense.setDate(SupportMethod::loadLine());
+        expense.setDateAsInt( SupportMethod::convertDateWithDashToInt( expense.getDate() ) );
+        if(SupportMethod::isProperDate( expense.getDate(),expense.getDateAsInt() ))
+            break;
+    }
     cout << "Podaj opis: ";
     expense.setItem(SupportMethod::loadLine());
 
     cout << "Podaj kwote: ";
-    cin >> newAmount;
-    expense.setAmount(newAmount);
+    cin>>AmountAsString;
 
+    expense.setAmount( SupportMethod::changeComaToDot( AmountAsString ) );
 
     return expense;
 }

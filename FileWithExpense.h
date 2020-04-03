@@ -4,6 +4,7 @@
 #include "Expense.h"
 #include "TextFile.h"
 #include "Markup.h"
+#include <string.h>
 
 using namespace std;
 

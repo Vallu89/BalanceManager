@@ -2,16 +2,16 @@
 1585419174 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.cpp
 	"BalanceManager.h"
 
-1585812464 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.cpp
+1585899749 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.cpp
 	"FileWithIncome.h"
 
 1585811766 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
 	"Income.h"
 
-1585845664 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
+1585900363 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
 	"IncomeManager.h"
 
-1585830266 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
+1585900378 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
 	<iostream>
 	"BalanceManager.h"
 	"UserManager.h"
@@ -106,10 +106,10 @@
 1585811803 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expense.h
 	<iostream>
 
-1585812295 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.cpp
+1585901033 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.cpp
 	"ExpenseManager.h"
 
-1585812464 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.cpp
+1585865152 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.cpp
 	"FileWithExpense.h"
 
 1585397984 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
@@ -124,10 +124,10 @@
 1585404884 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
 	"UserManager.h"
 
-1585845511 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
+1585863604 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
 	"SupportMethod.h"
 
-1585845998 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.h
+1585863604 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.h
 	<iostream>
 	<iostream>
 	<sstream>
@@ -161,7 +161,7 @@
 	"IncomeManager.h"
 	"ExpenseManager.h"
 
-1585845307 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
+1585899242 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
 	<iostream>
 	<string>
 	<stdlib.h>
@@ -170,20 +170,22 @@
 	"SupportMethod.h"
 	"Markup.h"
 
-1582403825 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.h
+1585864800 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.h
 	<vector>
 	"Income.h"
 	"TextFile.h"
 	"Markup.h"
+	<string.h>
 
-1585813008 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
+1585899242 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
 	"Expense.h"
 	"FileWithExpense.h"
 	"SupportMethod.h"
 	"Markup.h"
 
-1581973089 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.h
+1585865152 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.h
 	"Expense.h"
 	"TextFile.h"
 	"Markup.h"
+	<string.h>
 

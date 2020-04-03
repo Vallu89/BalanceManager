@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int main(){
+int _main(){
 
 
     BalanceManager balanceManager("users.xml" );
@@ -69,7 +69,7 @@ int main(){
     return 0;
 }
 
-int _main()
+int main()
 {
 
 
@@ -77,7 +77,7 @@ int _main()
 
     if (incomeManager.getIncomes().empty() == true  )
             incomeManager.setLastIncomeId(incomeManager.loadIncomesOfLoggedUserFromFile());
-    //cout << incomeManager.getLastIncomeId()<<endl;
+    cout << incomeManager.getLastIncomeId()<<endl;
     system("pause");
     incomeManager.addIncome();
 

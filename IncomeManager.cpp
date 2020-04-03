@@ -39,7 +39,7 @@ int IncomeManager::addIncome()
     incomes.push_back(income);
     fileWithIncome.writeIncomesIntoFile(income);
 
-    return ++lastIncomeId;
+    return lastIncomeId;
 }
 
 Income IncomeManager::getNewIncomeData()
