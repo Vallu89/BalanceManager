@@ -77,9 +77,24 @@ void BalanceManager::showPreviousMonthBalance()
 
 void BalanceManager::showBalanceFromPeriod()
 {
+    string fromDate, toDate;
     system("cls");
-    double incomes = incomeManager->showAllIncmoesFromPreviousMonth();
-    double expenses = expenseManager->showAllExpensesFromPreviousMonth();
+    while(1)
+    {
+        cout<<"Podaj poczatek wybranego okresu: "<<endl;
+        fromDate = SupportMethod::loadLine();
+        if(SupportMethod::isProperDate(fromDate,SupportMethod::convertDateWithDashToInt(fromDate)))
+            break;
+    }
+    while(1)
+    {
+        cout<<"Podaj koniec wybranego okresu: "<<endl;
+        toDate = SupportMethod::loadLine();
+        if(SupportMethod::isProperDate(toDate,SupportMethod::convertDateWithDashToInt(toDate)))
+            break;
+    }
+    double incomes = incomeManager->showAllIncomesFromPeriod( fromDate, toDate);
+    double expenses = expenseManager->showAllExpensesFromPeriod( fromDate, toDate);
     cout <<"Przychod calkowity: "<<incomes<<endl;
     cout <<"Rozchod calkowity: "<<expenses<<endl;
     double totalBalance = incomes - expenses;
