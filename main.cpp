@@ -73,13 +73,11 @@ int _main()
 {
 
 
-    IncomeManager incomeManager ("incomes.xml",1);
+    IncomeManager *incomeManager = new IncomeManager("incomes.xml",1);
 
-    if (incomeManager.getIncomes().empty() == true  )
-            incomeManager.setLastIncomeId(incomeManager.loadIncomesOfLoggedUserFromFile());
-    //incomeManager.addIncome();
-    //incomeManager.addIncome();
-    cout<< incomeManager.showAllIncomesInThisMonth() <<endl;
+    if (incomeManager->getIncomes().empty() == true  )
+            incomeManager->setLastIncomeId(incomeManager->loadIncomesOfLoggedUserFromFile());
+    incomeManager->addIncome();
 
     return 0;
 }

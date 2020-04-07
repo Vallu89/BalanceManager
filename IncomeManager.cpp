@@ -133,7 +133,9 @@ double IncomeManager::showAllIncmoesFromPreviousMonth()
 {
     cout<<"         PRZYCHODY         "<<endl;
     string actualDate = SupportMethod::convertActualDateToString();
+    cout <<actualDate<<"<--Aktualna data"<<endl;
     string monthBeforeActual = SupportMethod::changeMonth( actualDate,'-' );
+    cout <<monthBeforeActual<<"<--data cofnieta o miesiac"<<endl;
     return IncomesFromPeriod( monthBeforeActual ,monthBeforeActual ,true );
 }
 

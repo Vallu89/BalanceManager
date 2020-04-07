@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1586257282 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.cpp
+1586261009 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.cpp
 	"BalanceManager.h"
 
 1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.cpp
@@ -8,10 +8,10 @@
 1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
 	"Income.h"
 
-1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
+1586285306 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
 	"IncomeManager.h"
 
-1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
+1586285609 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
 	<iostream>
 	"BalanceManager.h"
 	"UserManager.h"
@@ -112,7 +112,7 @@
 1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.cpp
 	"FileWithExpense.h"
 
-1586260549 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
+1586261009 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
 	"FileWithUsers.h"
 
 1577994696 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.cpp
@@ -121,10 +121,10 @@
 1577994696 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.h
 	<iostream>
 
-1586260581 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
+1586284848 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
 	"UserManager.h"
 
-1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
+1586263680 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
 	"SupportMethod.h"
 
 1586255859 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.h
@@ -136,7 +136,7 @@
 	<cstdlib>
 	<stdlib.h>
 
-1581171145 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.h
+1586284848 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -145,7 +145,7 @@
 	"FileWithUsers.h"
 	"User.h"
 
-1586260501 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.h
+1586261009 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.h
 	<iostream>
 	<vector>
 	<fstream>

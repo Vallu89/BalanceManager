@@ -74,15 +74,7 @@ void UserManager::registrationUser(){
     system("pause");
 }
 
-void UserManager::writeAllUsers(){
 
-    for (int i = 0; i< users.size(); i++){
-
-        cout << users[i].getUserId() << endl;
-        cout << users[i].getLogin() << endl;
-        cout << users[i].getPassword() << endl;
-        }
-}
 
 vector <User> UserManager::changePasswordOfLoggedUser()
 {

@@ -230,9 +230,9 @@ double SupportMethod::changeComaToDot( string number )
     }
     else
     {
-        if ( sign = '+')
+        if ( sign == '+')
             unit++;
-        else if (sign = '-')
+        else if (sign == '-')
             unit--;
         else
            return error;

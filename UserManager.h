@@ -31,7 +31,6 @@ public:
     };
     int logonUser();
     void registrationUser();
-    void writeAllUsers();
     void logoutUser();
     vector <User> changePasswordOfLoggedUser();
     int getIdOfLoggedUser();
