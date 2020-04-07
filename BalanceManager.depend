@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1586186243 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.cpp
+1586254422 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\balancemanager.cpp
 	"BalanceManager.h"
 
 1585903668 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithincome.cpp
@@ -8,7 +8,7 @@
 1585811766 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
 	"Income.h"
 
-1586249670 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
+1586251085 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
 	"IncomeManager.h"
 
 1586163915 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
@@ -106,7 +106,7 @@
 1585811803 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expense.h
 	<iostream>
 
-1586249830 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.cpp
+1586254682 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.cpp
 	"ExpenseManager.h"
 
 1585903668 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.cpp
@@ -161,7 +161,7 @@
 	"IncomeManager.h"
 	"ExpenseManager.h"
 
-1586249550 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
+1586254763 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
 	<iostream>
 	<string>
 	<stdlib.h>
@@ -179,7 +179,7 @@
 	"Markup.h"
 	<string.h>
 
-1586249830 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
+1586254722 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
 	"Expense.h"
 	"FileWithExpense.h"
 	"SupportMethod.h"

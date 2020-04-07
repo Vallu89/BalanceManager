@@ -74,6 +74,7 @@ Income IncomeManager::getNewIncomeData()
 //
 double IncomeManager::IncomesFromPeriod(string fromDate, string toDate, bool wholeMonth)
 {
+    bool isSomeCashFlowExist = false;
     double sum = 0;
     int fromDateAsIntWithoutDays, toDateAsIntWithoutDays;
 
@@ -98,14 +99,17 @@ double IncomeManager::IncomesFromPeriod(string fromDate, string toDate, bool who
             {
                 showIncome(*itr);
                 sum += itr -> getAmount();
+                isSomeCashFlowExist = true;
             }
         }
         cout << endl;
     }
     else
     {
-        cout << endl << "Brak Przychodów w obecnym czasie." << endl << endl;
+        cout << endl << "Brak Przychodów..." << endl << endl;
     }
+    if (!isSomeCashFlowExist)
+        cout<<"Brak Przychodow w obecnym czasie.\n"<<endl;
     return sum;
 }
 
@@ -114,7 +118,6 @@ double IncomeManager::showAllIncomesInThisMonth()
     cout<<"         PRZYCHODY         "<<endl;
     string actualDate = SupportMethod::convertActualDateToString();
     return IncomesFromPeriod( actualDate , actualDate, true );
-
 }
 
 void IncomeManager::showIncome( Income income )
@@ -124,4 +127,19 @@ void IncomeManager::showIncome( Income income )
             cout << "Opis:         " << income.getItem() << endl;
             cout << "Kwota:        " << income.getAmount() << endl;
             cout << "---" << endl;
+}
+
+double IncomeManager::showAllIncmoesFromPreviousMonth()
+{
+    cout<<"         PRZYCHODY         "<<endl;
+    string actualDate = SupportMethod::convertActualDateToString();
+    string monthBeforeActual = SupportMethod::changeMonth( actualDate,'-' );
+    return IncomesFromPeriod( monthBeforeActual ,monthBeforeActual ,true );
+}
+
+double IncomeManager::showAllIncomesFromPeriod(string fromDate, string toDate)
+{
+
+    cout<<"         PRZYCHODY         "<<endl;
+    return IncomesFromPeriod( fromDate ,toDate ,false );
 }

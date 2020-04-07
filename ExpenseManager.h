@@ -29,8 +29,8 @@ public:
     int addExpense();
     double ExpensesFromPeriod(string fromDate, string toDate, bool wholeMonth);
     double showAllExpensesInThisMonth();
-    double showAllExpensesFromPrevousMonth();
-    double showAllExpensesFromPeriod();
+    double showAllExpensesFromPreviousMonth();
+    double showAllExpensesFromPeriod(string fromDate, string toDate);
     void showExpense( Expense expense );
     vector <Expense> &getExpenses() { return expenses; };
     int loadExpensesOfLoggedUserFromFile();

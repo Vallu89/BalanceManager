@@ -32,8 +32,8 @@ public:
     } ;
     int addIncome();
     double showAllIncomesInThisMonth();
-    double showAllIncmoesFromPrevousMonth();
-    double showAllIncomesFromPeriod();
+    double showAllIncmoesFromPreviousMonth();
+    double showAllIncomesFromPeriod(string fromDate, string toDate);
     int loadIncomesOfLoggedUserFromFile();
     vector <Income> &getIncomes() { return incomes; };
     Income getNewIncomeData();

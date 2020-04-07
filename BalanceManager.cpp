@@ -64,12 +64,28 @@ void BalanceManager::showThisMonthBalance()
 
 void BalanceManager::showPreviousMonthBalance()
 {
+    system("cls");
+    double incomes = incomeManager->showAllIncmoesFromPreviousMonth();
+    double expenses = expenseManager->showAllExpensesFromPreviousMonth();
+    cout <<"Przychod calkowity: "<<incomes<<endl;
+    cout <<"Rozchod calkowity: "<<expenses<<endl;
+    double totalBalance = incomes - expenses;
+    cout <<"Bilans: "<< totalBalance <<endl;
 
+    system("pause");
 }
 
 void BalanceManager::showBalanceFromPeriod()
 {
+    system("cls");
+    double incomes = incomeManager->showAllIncmoesFromPreviousMonth();
+    double expenses = expenseManager->showAllExpensesFromPreviousMonth();
+    cout <<"Przychod calkowity: "<<incomes<<endl;
+    cout <<"Rozchod calkowity: "<<expenses<<endl;
+    double totalBalance = incomes - expenses;
+    cout <<"Bilans: "<< totalBalance <<endl;
 
+    system("pause");
 }
 
 void BalanceManager::registrationUser()

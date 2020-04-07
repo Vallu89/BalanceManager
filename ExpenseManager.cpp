@@ -76,6 +76,7 @@ string AmountAsString;
 
 double ExpenseManager::ExpensesFromPeriod(string fromDate, string toDate, bool wholeMonth)
 {
+    bool isSomeCashFlowExist= false;
     double sum = 0;
     int fromDateAsIntWithoutDays, toDateAsIntWithoutDays;
 
@@ -99,14 +100,17 @@ double ExpenseManager::ExpensesFromPeriod(string fromDate, string toDate, bool w
             {
                 showExpense(*itr);
                 sum += itr -> getAmount();
+                isSomeCashFlowExist= true;
             }
         }
         cout << endl;
     }
     else
     {
-        cout << endl << "Brak wydatków w obecnym czasie." << endl << endl;
+        cout << endl << "Brak wydatków..." << endl << endl;
     }
+    if (!isSomeCashFlowExist)
+        cout<<"Brak wydatkow w obecnym czasie.\n"<<endl;
     return sum;
 }
 
@@ -125,4 +129,18 @@ void ExpenseManager::showExpense( Expense expense )
             cout << "Opis:         " << expense.getItem() << endl;
             cout << "Kwota:        -" << expense.getAmount() << endl;
             cout << "---"<< endl;
+}
+
+double ExpenseManager::showAllExpensesFromPreviousMonth()
+{
+    cout<<"         WYDATKI         "<<endl;
+    string actualDate = SupportMethod::convertActualDateToString();
+    string monthBeforeActual = SupportMethod::changeMonth( actualDate,'-' );
+    return ExpensesFromPeriod( monthBeforeActual ,monthBeforeActual ,true );
+}
+
+double ExpenseManager::showAllExpensesFromPeriod(string fromDate, string toDate)
+{
+    cout<<"         WYDATKI         "<<endl;
+    return ExpensesFromPeriod( fromDate ,toDate ,false );
 }
