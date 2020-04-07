@@ -2,5 +2,4 @@ bin/
 obj/
 *.uxf
 *.txt
-*.cbp
 *.xml
