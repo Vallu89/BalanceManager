@@ -21,7 +21,7 @@ class IncomeManager {
     vector <Income> incomes;
     const int LOGGED_USER_ID;
     CMarkup xml;
-    int lastIncomeId = 0;
+    int lastIncomeId;
 
 public:
 
