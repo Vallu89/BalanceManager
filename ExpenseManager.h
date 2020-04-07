@@ -17,7 +17,7 @@ class ExpenseManager{
     vector <Expense> expenses;
     const int LOGGED_USER_ID;
     CMarkup xml;
-    int lastExpenseId;
+    int lastExpenseId ;
 
 public:
 

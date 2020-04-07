@@ -8,10 +8,10 @@
 1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\income.cpp
 	"Income.h"
 
-1586285306 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
+1586286229 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.cpp
 	"IncomeManager.h"
 
-1586285609 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
+1586286229 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\main.cpp
 	<iostream>
 	"BalanceManager.h"
 	"UserManager.h"
@@ -121,10 +121,10 @@
 1577994696 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.h
 	<iostream>
 
-1586284848 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
+1586286229 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
 	"UserManager.h"
 
-1586263680 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
+1586286229 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
 	"SupportMethod.h"
 
 1586255859 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.h
@@ -136,7 +136,7 @@
 	<cstdlib>
 	<stdlib.h>
 
-1586284848 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.h
+1586286229 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.h
 	<iostream>
 	<vector>
 	<windows.h>
@@ -161,7 +161,7 @@
 	"IncomeManager.h"
 	"ExpenseManager.h"
 
-1586255859 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
+1586286418 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
 	<iostream>
 	<string>
 	<stdlib.h>
@@ -179,7 +179,7 @@
 	"Markup.h"
 	<string.h>
 
-1586255859 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
+1586286418 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\expensemanager.h
 	"Expense.h"
 	"FileWithExpense.h"
 	"SupportMethod.h"
