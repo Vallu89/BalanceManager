@@ -7,6 +7,8 @@ using namespace std;
 #include "FileWithExpense.h"
 #include "SupportMethod.h"
 #include "Markup.h"
+#include <algorithm>
+#include<vector>
 
 class ExpenseManager{
 
@@ -25,9 +27,11 @@ public:
         lastExpenseId = 0;
     };
     int addExpense();
-    double showAllExpenseInThisMonth();
+    double ExpensesFromPeriod(string fromDate, string toDate, bool wholeMonth);
+    double showAllExpensesInThisMonth();
     double showAllExpensesFromPrevousMonth();
-    double showAllExpenseFromPeriod();
+    double showAllExpensesFromPeriod();
+    void showExpense( Expense expense );
     vector <Expense> &getExpenses() { return expenses; };
     int loadExpensesOfLoggedUserFromFile();
     Expense getNewExpenseData();

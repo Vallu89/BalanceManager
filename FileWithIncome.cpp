@@ -11,18 +11,11 @@ void FileWithIncome::writeIncomesIntoFile( Income income )
         xml.AddElem("Incomes");
         isFileExist = false;
     }
-
     xml.IntoElem();
-
     xml.AddElem("Income");
     xml.IntoElem();
-
     xml.AddElem("UserId",income.getUserId());
- /*   if(!isFileExist)
-        xml.AddElem("IncomeId",1);
-    else */
-        xml.AddElem("IncomeId",income.getIncomeId());
-
+    xml.AddElem("IncomeId",income.getIncomeId());
     xml.AddElem("Date",income.getDate());
     xml.AddElem("DateAsInt",income.getDateAsInt());
     xml.AddElem("Item",income.getItem());

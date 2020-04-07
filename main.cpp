@@ -7,7 +7,7 @@
 
 using namespace std;
 
-int _main(){
+int main(){
 
 
     BalanceManager balanceManager("users.xml" );
@@ -69,7 +69,7 @@ int _main(){
     return 0;
 }
 
-int main()
+int _main()
 {
 
 
@@ -77,9 +77,9 @@ int main()
 
     if (incomeManager.getIncomes().empty() == true  )
             incomeManager.setLastIncomeId(incomeManager.loadIncomesOfLoggedUserFromFile());
-    cout << incomeManager.getLastIncomeId()<<endl;
-    system("pause");
-    incomeManager.addIncome();
+    //incomeManager.addIncome();
+    //incomeManager.addIncome();
+    cout<< incomeManager.showAllIncomesInThisMonth() <<endl;
 
     return 0;
 }
@@ -88,7 +88,7 @@ int __main()
 {
 
 
-    cout <<SupportMethod::howManyDaysHaveMonth("2020-06-27")<<endl;
+    cout <<SupportMethod::convertActualDateToString()<<endl;
 
     return 0;
 }

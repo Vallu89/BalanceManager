@@ -4,6 +4,8 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
+#include <algorithm>
+#include <vector>
 
 #include "FileWithIncome.h"
 #include "Income.h"
@@ -35,9 +37,12 @@ public:
     int loadIncomesOfLoggedUserFromFile();
     vector <Income> &getIncomes() { return incomes; };
     Income getNewIncomeData();
+    void showIncome(Income income);
+    double IncomesFromPeriod(string fromDate, string toDate, bool wholeMonth);
     int getLastIncomeId() {return lastIncomeId;}
     void setLastIncomeId(int lastIncomeId)
         {this->lastIncomeId = lastIncomeId;}
+
 
 };
 

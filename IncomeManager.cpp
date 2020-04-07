@@ -17,15 +17,19 @@ int IncomeManager::loadIncomesOfLoggedUserFromFile()
             income.setIncomeId( atoi( MCD_2PCSZ(xml.GetData()) ) );
             xml.FindElem("Date");
             income.setDate(xml.GetData());
+            xml.FindElem("DateAsInt");
+            income.setDateAsInt( atoi( MCD_2PCSZ(xml.GetData()) ) );
             xml.FindElem("Item");
             income.setItem(xml.GetData());
             xml.FindElem("Amount");
-            income.setAmount(atoi( MCD_2PCSZ(xml.GetData()) ));
+            income.setAmount(atof( MCD_2PCSZ(xml.GetData()) ));
 
             incomes.push_back(income);
         }
         xml.OutOfElem();
     }
+    sort(incomes.begin(), incomes.end(), [](  Income& l, Income& r )
+         {return l.getDateAsInt() < r.getDateAsInt(); });
 
     return income.getIncomeId();
 }
@@ -67,9 +71,57 @@ Income IncomeManager::getNewIncomeData()
 
     return income;
 }
+//
+double IncomeManager::IncomesFromPeriod(string fromDate, string toDate, bool wholeMonth)
+{
+    double sum = 0;
+    int fromDateAsIntWithoutDays, toDateAsIntWithoutDays;
+
+    if (!incomes.empty())
+    {
+        if (wholeMonth)
+        {
+            fromDateAsIntWithoutDays = (SupportMethod::convertDateWithDashToInt( fromDate )/100)*100;
+            toDateAsIntWithoutDays = (SupportMethod::convertDateWithDashToInt( toDate )/100)*100
+                                                    + SupportMethod::howManyDaysHaveMonth(toDate);
+        }
+        else
+        {
+            fromDateAsIntWithoutDays = SupportMethod::convertDateWithDashToInt( fromDate );
+            toDateAsIntWithoutDays = SupportMethod::convertDateWithDashToInt( toDate );
+        }
+
+
+        for (vector <Income> :: iterator itr = incomes.begin(); itr != incomes.end(); itr++)
+        {
+            if ( itr -> getDateAsInt() > fromDateAsIntWithoutDays && itr -> getDateAsInt() <= toDateAsIntWithoutDays )
+            {
+                showIncome(*itr);
+                sum += itr -> getAmount();
+            }
+        }
+        cout << endl;
+    }
+    else
+    {
+        cout << endl << "Brak Przychodów w obecnym czasie." << endl << endl;
+    }
+    return sum;
+}
 
 double IncomeManager::showAllIncomesInThisMonth()
 {
+    cout<<"         PRZYCHODY         "<<endl;
+    string actualDate = SupportMethod::convertActualDateToString();
+    return IncomesFromPeriod( actualDate , actualDate, true );
 
 }
 
+void IncomeManager::showIncome( Income income )
+{
+    cout << endl << "ID:           " << income.getIncomeId() << endl;
+            cout << "Data:         " << income.getDate() << endl;
+            cout << "Opis:         " << income.getItem() << endl;
+            cout << "Kwota:        " << income.getAmount() << endl;
+            cout << "---" << endl;
+}

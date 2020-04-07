@@ -21,7 +21,7 @@ string SupportMethod::convertActualDateToString()
 {
     time_t rawtime;
     struct tm * timeinfo;
-    char buffer[10]; // <-- Jakby coœ nie hula³o, warto siê tym zainteresowaæ :P
+    char buffer[64]; // <-- Jakby coœ nie hula³o, warto siê tym zainteresowaæ :P
 
     time (&rawtime);
     timeinfo = localtime(&rawtime);
@@ -130,7 +130,15 @@ bool SupportMethod::isProperDate( string date, int dateAsInt ) {
             if ( date[4] == '-' && date[7] == '-' )
             {
                 if ( date[5] <= '1' && date[8] <= '3')
-                    return true;
+                    {
+                        if ( dateAsInt % 100 <= howManyDaysHaveMonth( date ))
+                            return true;
+                        else
+                        {
+                            cout<<"Wybrany miesiac nie posiada takiej ilosci dni. Wpisz poprawna date."<<endl;
+                            return false;
+                        }
+                    }
 
                 else
                 {
@@ -172,3 +180,71 @@ double SupportMethod::changeComaToDot( string number )
     numberAsDouble = atof( newNumber.c_str() );
     return numberAsDouble;
 }
+
+ string SupportMethod::changeMonth (string date, char sign)
+ {
+    string year, error= "Blad!";
+    int yearAsInt;
+    char ten,unit;
+
+    ten = date[5];
+    unit = date[6];
+
+    if ( ten == '0' && unit == '1' && sign == '-' )
+    {
+       for (int i = 0; i <= 3; i++)
+       {
+           year += date[i];
+       }
+
+       yearAsInt = convertStringToInt( year );
+       year = convertIntToString( --yearAsInt );
+       ten = '1';
+       unit = '2';
+       if( yearAsInt < 2000 )
+       return error;
+        else
+       {
+          for (int i = 0; i<=3; i++)
+        {
+            date[i] = year[i];
+        }
+       }
+    }
+    else if ( ten == '1' && unit == '2' && sign == '+' )
+    {
+       for (int i = 0; i <= 3; i++)
+       {
+           year += date[i];
+       }
+
+       yearAsInt = convertStringToInt( year );
+       year = convertIntToString( ++yearAsInt );
+       ten = '0';
+       unit = '1';
+
+          for (int i = 0; i<=3; i++)
+        {
+            date[i] = year[i];
+        }
+    }
+    else
+    {
+        if ( sign = '+')
+            unit++;
+        else if (sign = '-')
+            unit--;
+        else
+           return error;
+    }
+
+    date[5] = ten;
+    date[6] = unit;
+
+    if ( isProperDate(date, convertDateWithDashToInt(date) ) )
+        return date;
+    else
+       return error;
+
+    return 0;
+ }

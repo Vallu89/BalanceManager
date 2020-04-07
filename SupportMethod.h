@@ -23,10 +23,11 @@ public:
     static string loadLine();
     static short howManyDaysHaveMonth( string date );
     static bool isLeapYear( string date );
-    static int periodBetweenDates();
+    //static int periodBetweenDates();
     static char loadChar();
     static bool isProperDate(  string date, int dateAsInt  );
     static double changeComaToDot( string number );
+    static string changeMonth (string date, char sign);
 };
 
 #endif

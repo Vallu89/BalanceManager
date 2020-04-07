@@ -51,10 +51,15 @@ void BalanceManager::addExpense()
 
 void BalanceManager::showThisMonthBalance()
 {
-    float totalBalance = incomeManager->showAllIncomesInThisMonth()
-                        - expenseManager->showAllExpenseInThisMonth();
+    system("cls");
+    double incomes = incomeManager->showAllIncomesInThisMonth();
+    double expenses = expenseManager->showAllExpensesInThisMonth();
+    cout <<"Przychod calkowity: "<<incomes<<endl;
+    cout <<"Rozchod calkowity: "<<expenses<<endl;
+    double totalBalance = incomes - expenses;
+    cout <<"Bilans: "<< totalBalance <<endl;
 
-    cout << totalBalance <<endl;
+    system("pause");
 }
 
 void BalanceManager::showPreviousMonthBalance()
