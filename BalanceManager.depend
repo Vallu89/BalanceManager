@@ -161,7 +161,7 @@
 	"IncomeManager.h"
 	"ExpenseManager.h"
 
-1586286418 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
+1586288792 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\incomemanager.h
 	<iostream>
 	<string>
 	<stdlib.h>
