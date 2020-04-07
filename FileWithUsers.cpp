@@ -46,7 +46,25 @@ void FileWithUsers::writeUserIntoFile( User user )
     xml.Save(FILE_NAME);
 }
 
-void FileWithUsers::saveAllUsersToFile(vector <User> &users)
+void FileWithUsers::changeUsersPassword(string newPassword, int loggedUserId)
 {
-    //TO DO
+    xml.Load(FILE_NAME);
+    xml.FindElem("Users");
+    xml.IntoElem();
+
+    while( xml.FindElem("User") )
+    {
+        xml.IntoElem();
+
+        xml.FindElem("UserId");
+        if ( atoi( MCD_2PCSZ( xml.GetData() ) ) == loggedUserId)
+        {
+            xml.FindElem("Password");
+            xml.SetData( newPassword );
+        }
+
+        xml.OutOfElem();
+    }
+
+    xml.Save(FILE_NAME);
 }

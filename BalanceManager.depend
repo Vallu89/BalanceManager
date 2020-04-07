@@ -112,7 +112,7 @@
 1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithexpense.cpp
 	"FileWithExpense.h"
 
-1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
+1586260549 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.cpp
 	"FileWithUsers.h"
 
 1577994696 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.cpp
@@ -121,7 +121,7 @@
 1577994696 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\user.h
 	<iostream>
 
-1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
+1586260581 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\usermanager.cpp
 	"UserManager.h"
 
 1586255859 source:e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\supportmethod.cpp
@@ -145,7 +145,7 @@
 	"FileWithUsers.h"
 	"User.h"
 
-1581171145 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.h
+1586260501 e:\przyszlyprogramista\objectc++\balancemanager\balancemanager\filewithusers.h
 	<iostream>
 	<vector>
 	<fstream>

@@ -31,7 +31,7 @@ public:
         : TextFile( USERS_FILE_NAME ){};
     void writeUserIntoFile(User user);
     vector <User> loadUsersFromFile();
-    void saveAllUsersToFile(vector <User> &users);
+    void changeUsersPassword(string newPassword, int loggedUserId);
 };
 
 

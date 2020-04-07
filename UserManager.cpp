@@ -99,7 +99,7 @@ vector <User> UserManager::changePasswordOfLoggedUser()
             system("pause");
         }
     }
-    fileWithUsers.saveAllUsersToFile(users);
+    fileWithUsers.changeUsersPassword( newPassword, loggedUserId );
     return users;
 }
 
